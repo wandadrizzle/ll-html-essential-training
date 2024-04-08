@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><!--Supporting languages!-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="little HTML notes">
+    <title>6. Media - 10. Structuring Tabular Data</title>
+</head>
+<body>
+    <h1></h1>
+    <h2>6. Media</h2>
+    <audio controls muted>
+        <source src="" type="">
+        Fallback text.
+    </audio>
+
+    <video controls muted> <!--Adaptive bitrate streaming?-->
+        <source src="" type="">
+        <track src="" kind="captions" label="english" srclang="en" default>
+    </video>
+    <!--EMBEDDING-->
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/C4jlXhp_RmQ?si=0GfDoSOYiaYXbBzV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+
+    <h2>7. More Ways to Identify Content</h2>
+    <ul>
+        <li>Languages</li>
+        <li>Spans & Divs</li>
+    </ul>
+    <hr>
+
+    <h2>8. Putting It All Together</h2>
+        <p>What's in the body?</p>
+        <ul>
+            <li>Header</li>
+            <li>Footer</li>
+            <li>Main</li>
+            <li>Article</li>
+            <li>Section</li>
+            <li>Footer</li>
+        </ul>
+        <hr>
+    <h2>9. Forms and Interactive Elements</h2>
+        <!--Get methods are insecure!-->
+        <p>Sign up for my newsletter &ssmile;</p>
+        <form action="" method="post">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" value="Sindiswa"><!--Auto-populate-->&nbsp;&nbsp;&nbsp;
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com"><!--Suggest input format-->
+            <br>
+            <label for="color">Color: </label>
+            <input type="color" name="color" id="color"><br>
+            <label for="date">Date: </label>
+            <input type="datetime" name="date" id="date">
+            <label for="file">File: </label>
+            <input type="file" name="file" id="file"><br>
+            <fieldset>
+                <legend>These are checkbox fields in a fieldset.</legend>
+                <input type="checkbox" name="chk" id="this">
+                <label for="this">This</label>
+                <input type="checkbox" name="chk" id="that">
+                <label for="that">That</label>
+                <input type="checkbox" name="chk" id="or">
+                <label for="or">Or</label>
+            </fieldset><br>
+            <button type="submit">Sign Up</button>
+        </form>
+        <hr>
+    <h2>10. Structuring Tabular Data</h2>
+    <p>Is your data a table? Remember that you need to convey meaning and be semantic.</p>
+
+    <table>
+        <thead>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JavaScript</th>
+            <th>C#</th>
+        </thead>
+        <tr>
+            <td>Foundations and Structure</td>
+            <td>Styles</td>
+            <td>Functions & Interactivity</td>
+            <td>Backend</td>
+        </tr>
+    </table>
+</body>
+</html>
