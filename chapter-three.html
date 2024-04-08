@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Understanding the Power of HTML - 5. Images and Graphics</title>
+</head>
+<body>
+    <h1>Contents</h1>
+    <h2>3. Understanding the Power of HTML</h2>
+    <p>&star; &nbsp; &hearts; < test ></p>
+    <hr>
+
+    <h2>4. Linking and Navigation</h2>
+    <a href="https://example.com"></a> <!--Put whatever you want to be clickable.-->
+    <!--1. ABSOLUTE URLs, 2. RELATIVE URLs - for working locally, -->
+    
+    <nav role="navigation" aria-label="main menu">
+        <ul class="navbar">
+            <li><a href="">Home</a></li>
+            <li><a href="">People</a></li>
+            <li><a href="">Prices</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav> <!--A breadcrumb would need to be ordered.-->
+    <hr>
+
+    <h2>5. Images and Graphics</h2>
+    <img src="" alt="" width="" height=""> <!--This helps the browser calculate the layout-->
+    <p>Image formats have one goal: high quality but small size</p>
+    <ul>
+        <li>GIF</li>
+        <li>SVG</li><!--They scale really well, if you can use it! Use it...-->
+        <li>JPG</li><!--Make sure to compress, and prepare for the web.-->
+        <li>PNG</li>
+    </ul>
+    <!--Deliver different images to different sized screens
+        create multiple copies of images-->
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg" 
+    alt="shiny black dog looking pensive" 
+    width="480" height="360"
+    
+    srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg 2x, 
+                    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 3x, 
+                            https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 4x"
+    >
+    <!--This is for responsive width-->
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg" 
+		 alt="shiny black dog looking pensive" 
+		 width="480" height="360"
+     srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg  480w, 
+	   	  	   https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg  960w, 
+	   	  	   https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 1440w, 
+		 				 https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 1920w" 
+    >
+</body>
+</html>
